@@ -177,7 +177,9 @@ if(id==='abschluss') return `<section class="card"><h2>12. Gelingensnachweis und
 <li>Kooperationsverbund Schulsozialarbeit: Leitlinien und Qualitätsverständnis der Schulsozialarbeit.</li>
 <li>DBSH: Berufsethik und professionelle Verantwortung Sozialer Arbeit.</li>
 </ul><p class="small">Dieses Modul ersetzt keine Einzelfallprüfung. Maßgeblich sind lokale Schutzkonzepte, Dienstwege, Jugendhilfevereinbarungen und Fachberatung.</p></div>
-<h3>Kompetenz-Ampel</h3><div id="competenceBox" class="note">Wird nach Bearbeitung aktualisiert.</div><button class="good" onclick="finishModule()">Abschluss prüfen und Zertifikat anzeigen</button> <button class="secondary" onclick="sendData()">An Google Sheets senden</button> <button class="ghost" onclick="exportData()">Export speichern</button><div id="cert" class="okbox hidden"><h2>Zertifikat</h2><p><strong>Band 4, Modul 2: Gewichtige Anhaltspunkte erkennen und fachlich einordnen</strong></p><p>Der Lernpfad wurde erfolgreich abgeschlossen.</p><p>Datum: <span id="certDate"></span></p></div></section>`;
+<h3>Kompetenz-Ampel</h3><div id="competenceBox" class="note">Wird nach Bearbeitung aktualisiert.</div><button class="good" onclick="finishModule()">Abschluss prüfen und Zertifikat anzeigen</button> <div class="form-group"><label><input type="checkbox" id="privacyConfirm"> Keine identifizierenden Falldaten</label></div>
+<div class="form-group"><label><input type="checkbox" id="sendConsent"> Online-Übermittlung zustimmen</label></div>
+<button class="secondary" onclick="sendData()">An Google Sheets senden</button> <button class="ghost" onclick="exportData()">Export speichern</button><div id="cert" class="okbox hidden"><h2>Zertifikat</h2><p><strong>Band 4, Modul 2: Gewichtige Anhaltspunkte erkennen und fachlich einordnen</strong></p><p>Der Lernpfad wurde erfolgreich abgeschlossen.</p><p>Datum: <span id="certDate"></span></p></div></section>`;
 return '<section class="card"><h2>Abschnitt nicht gefunden</h2></section>'
 }
 
